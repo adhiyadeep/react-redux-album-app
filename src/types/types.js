@@ -1,0 +1,12 @@
+// album
+export const LOADING_DATA = "LOADING_DATA";
+export const FETCH_ALBUM_SUCCESS = "FETCH_ALBUM_SUCCESS";
+export const FETCH_ALBUM_FAIL = "FETCH_ALBUM_FAIL";
+
+// image
+export const FETCH_IMAGE_SUCCESS = "FETCH_IMAGE_SUCCESS";
+export const FETCH_IMAGE_FAIL = "FETCH_IMAGE_FAIL";
+
+export const ADD_ITEM_SUCCESS = "ITEM_ADDED_SUCCESS";
+export const ADD_ITEM_FAIL = "ITEM_ADDED_FAIL";
+
