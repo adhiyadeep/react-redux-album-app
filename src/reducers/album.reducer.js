@@ -27,12 +27,10 @@ const getAlbumList = (state = initialAlbumState, action) => {
            return {...state, data:null};
      
       case FETCH_ALBUM_SUCCESS:
-        
           return {...state, data:action.payload,isSuccess:true};
 
-      
       case FETCH_ALBUM_FAIL:
-        return {...state, data:null,isSuccess:false,isError: true,  errors: action.payload,};
+        return {...state, data:null,isSuccess:false,isError: true, errors: action.payload,};
 
           default:
             return initialAlbumState;
@@ -47,7 +45,7 @@ const getImageList = (state = initialImageState, action) => {
 
       case FETCH_IMAGE_SUCCESS:
         return {...state, data:action.payload,isSuccess:true};
-
+        
       case FETCH_IMAGE_FAIL:
         return {...state, data:null,isSuccess:false,isError: true,  errors: action.payload};
 
@@ -67,10 +65,6 @@ const addFavItem = (state = {}, action) =>{
       return state;
   }
 }
-
-
-
-
 
 export default combineReducers({
     getAlbumList,
